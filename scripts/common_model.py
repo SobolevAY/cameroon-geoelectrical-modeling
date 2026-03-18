@@ -16,10 +16,10 @@ RHO_BASEMENT = float(P["basement_resistivity_ohm_m"])
 RHO_TARGET = float(P["target_resistivity_ohm_m"])
 
 # Conductivity
-SIGMA_LATERITE = float(P["laterite_conductivity_s_m"])
-SIGMA_SAPROLITE = float(P["saprolite_conductivity_s_m"])
-SIGMA_BASEMENT = float(P["basement_conductivity_s_m"])
-SIGMA_TARGET = float(P["target_conductivity_s_m"])
+SIGMA_LATERITE = 1 / SIGMA_LATERITE
+SIGMA_SAPROLITE = 1 / SIGMA_SAPROLITE
+SIGMA_BASEMENT = 1 / SIGMA_BASEMENT
+SIGMA_TARGET = 1 / SIGMA_TARGET
 
 # Geometry
 LATERITE_THICKNESS = float(P["laterite_thickness_m"])
